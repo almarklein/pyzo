@@ -47,6 +47,7 @@ settings= dict:
     defaultIndentWidth = 4
     defaultIndentUsingSpaces = 1
     defaultLineEndings = '' # Set depending on OS
+    auto_useFound = 0      # 0 = old behaviour, 1 = no confirmation, 2 = no confirmation and reuse autodetect each time
     autoIndent = 1
     autoCallTip = 1
     autoComplete_keywords = 1

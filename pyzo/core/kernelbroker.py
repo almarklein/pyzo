@@ -73,6 +73,9 @@ class KernelInfo(ssdf.Struct):
         # Instantiate with a value that is settable
         self.gui = "Auto"
 
+        # Use IPython if available
+        self.ipython = "yes"
+
         # The Python path. Paths should be separated by newlines.
         # '$PYTHONPATH' is replaced by environment variable by broker
         self.pythonPath = ""

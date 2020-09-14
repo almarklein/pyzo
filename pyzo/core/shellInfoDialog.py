@@ -59,6 +59,7 @@ class ShellInfo_exe(QtWidgets.QComboBox):
     def setTheText(self, value):
 
         # Init
+        self.original_value = value
         self.clear()
         self.setEditable(True)
         self.setInsertPolicy(self.InsertAtTop)
@@ -558,6 +559,8 @@ class ShellInfoTab(QtWidgets.QScrollArea):
         try:
             for key, widget in self._shellInfoWidgets.items():
                 info[key] = widget.getTheText()
+            if info["exe"] != self._shellInfoWidgets["exe"].original_value:
+                info["wasAutodetected"] = False
 
         except Exception as why:
             print("Error getting info in shell config:", why)

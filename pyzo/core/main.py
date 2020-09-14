@@ -113,9 +113,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Create new shell config if there is None
         if not pyzo.config.shellConfigs2:
-            from pyzo.core.kernelbroker import KernelInfo
-
-            pyzo.config.shellConfigs2.append(KernelInfo())
+            pyzo.config.shellConfigs2 = []
 
         # Focus on editor
         e = pyzo.editors.getCurrentEditor()
