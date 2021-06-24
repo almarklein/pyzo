@@ -538,7 +538,7 @@ class FileMenu(Menu):
             self.addItem(
                 translate(
                     "menu",
-                    "Export to PDF ::: Export current file to PDF (e.g. for printing).",
+                    "Export to PDF ::: Export current file to PDF (e.g. for printing)."
                 ),
                 None,
                 lambda: PdfExport().exec(),
@@ -687,7 +687,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Paste and select ::: Paste the text that is now on the clipboard and keep it selected in order to change its indentation.",
+                "Paste and select ::: Paste the text that is now on the clipboard and keep it selected in order to change its indentation."
             ),  # noqa
             icons.paste_plain,
             self._editItemCallback,
@@ -735,7 +735,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Justify comment/docstring::: Reshape the selected text so it is aligned to around 70 characters.",
+                "Justify comment/docstring::: Reshape the selected text so it is aligned to around 70 characters."
             ),
             icons.text_align_justify,
             self._editItemCallback,
@@ -781,7 +781,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find or replace ::: Show find/replace widget. Initialize with selected text.",
+                "Find or replace ::: Show find/replace widget. Initialize with selected text."
             ),
             icons.find,
             pyzo.editors._findReplace.startFind,
@@ -789,7 +789,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find selection ::: Find the next occurrence of the selected text.",
+                "Find selection ::: Find the next occurrence of the selected text."
             ),
             None,
             pyzo.editors._findReplace.findSelection,
@@ -797,7 +797,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find selection backward ::: Find the previous occurrence of the selected text.",
+                "Find selection backward ::: Find the previous occurrence of the selected text."
             ),
             None,
             pyzo.editors._findReplace.findSelectionBw,
@@ -812,7 +812,7 @@ class EditMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find previous ::: Find the previous occurrence of the search string.",
+                "Find previous ::: Find the previous occurrence of the search string."
             ),
             None,
             pyzo.editors._findReplace.findPrevious,
@@ -889,7 +889,7 @@ class ViewMenu(Menu):
         # Create edge column menu
         t = translate(
             "menu",
-            "Location of long line indicator ::: The location of the long-line-indicator.",
+            "Location of long line indicator ::: The location of the long-line-indicator."
         )
         self._edgeColumMenu = GeneralOptionsMenu(self, t, self._setEdgeColumn)
         values = [0] + [i for i in range(60, 130, 10)]
@@ -947,7 +947,7 @@ class ViewMenu(Menu):
         self.addEditorItem(
             translate(
                 "menu",
-                "Show indentation guides ::: Show vertical lines to indicate indentation.",
+                "Show indentation guides ::: Show vertical lines to indicate indentation."
             ),
             None,
             "showIndentationGuides",
@@ -963,7 +963,7 @@ class ViewMenu(Menu):
         self.addEditorItem(
             translate(
                 "menu",
-                "Wrap long lines ::: Wrap lines that do not fit on the screen (i.e. no horizontal scrolling).",
+                "Wrap long lines ::: Wrap lines that do not fit on the screen (i.e. no horizontal scrolling)."
             ),
             None,
             "wrap",
@@ -971,7 +971,7 @@ class ViewMenu(Menu):
         self.addEditorItem(
             translate(
                 "menu",
-                "Highlight current line ::: Highlight the line where the cursor is.",
+                "Highlight current line ::: Highlight the line where the cursor is."
             ),
             None,
             "highlightCurrentLine",
@@ -979,7 +979,7 @@ class ViewMenu(Menu):
         self.addEditorItem(
             translate(
                 "menu",
-                "Highlight brackets ::: Highlight matched and unmatched brackets.",
+                "Highlight brackets ::: Highlight matched and unmatched brackets."
             ),
             None,
             "highlightMatchingBracket",
@@ -999,7 +999,7 @@ class ViewMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Previous object ::: Go back to the previous top-level structure.",
+                "Previous object ::: Go back to the previous top-level structure."
             ),
             None,
             self._previousTopLevelObject,
@@ -1211,7 +1211,7 @@ class ShellMenu(Menu):
             self.addItem(
                 translate(
                     "menu",
-                    "Interrupt ::: Interrupt the current running code (does not work for extension code).",
+                    "Interrupt ::: Interrupt the current running code (does not work for extension code)."
                 ),
                 icons.application_lightning,
                 self._shellAction,
@@ -1315,7 +1315,7 @@ class ShellMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Edit shell configurations... ::: Add new shell configs and edit interpreter properties.",
+                "Edit shell configurations... ::: Add new shell configs and edit interpreter properties."
             ),
             pyzo.icons.application_wrench,
             self._editConfig2,
@@ -1397,7 +1397,7 @@ class ShellButtonMenu(ShellMenu):
         self.addItem(
             translate(
                 "menu",
-                "Edit shell configurations... ::: Add new shell configs and edit interpreter properties.",
+                "Edit shell configurations... ::: Add new shell configs and edit interpreter properties."
             ),
             pyzo.icons.application_wrench,
             self._editConfig2,
@@ -1440,7 +1440,7 @@ class ShellContextMenu(ShellMenu):
         self.addItem(
             translate(
                 "menu",
-                "Help on this expression ::: Show help for the selected expression.",
+                "Help on this expression ::: Show help for the selected expression."
             ),
             icons.help,
             self._editItemCallback,
@@ -1564,7 +1564,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Help on this expression ::: Show help for the selected expression.",
+                "Help on this expression ::: Show help for the selected expression."
             ),
             icons.help,
             self._editItemCallback,
@@ -1634,7 +1634,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Justify comment/docstring::: Reshape the selected text so it is aligned to around 70 characters.",
+                "Justify comment/docstring::: Reshape the selected text so it is aligned to around 70 characters."
             ),
             icons.text_align_justify,
             self._editItemCallback,
@@ -1659,7 +1659,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find or replace ::: Show find/replace widget. Initialize with selected text.",
+                "Find or replace ::: Show find/replace widget. Initialize with selected text."
             ),
             icons.find,
             pyzo.editors._findReplace.startFind,
@@ -1667,7 +1667,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find selection ::: Find the next occurrence of the selected text.",
+                "Find selection ::: Find the next occurrence of the selected text."
             ),
             None,
             pyzo.editors._findReplace.findSelection,
@@ -1675,7 +1675,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Find selection backward ::: Find the previous occurrence of the selected text.",
+                "Find selection backward ::: Find the previous occurrence of the selected text."
             ),
             None,
             pyzo.editors._findReplace.findSelectionBw,
@@ -1686,7 +1686,7 @@ class EditorContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Run selection ::: Run the current editor's selected lines, selected words on the current line, or current line if there is no selection.",
+                "Run selection ::: Run the current editor's selected lines, selected words on the current line, or current line if there is no selection."
             ),  # noqa
             icons.run_lines,
             self._runSelected,
@@ -1785,7 +1785,7 @@ class EditorTabContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Set/Unset as MAIN file ::: The main file can be run while another file is selected.",
+                "Set/Unset as MAIN file ::: The main file can be run while another file is selected."
             ),
             icons.star,
             self._fileAction,
@@ -1802,7 +1802,7 @@ class EditorTabContextMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Run file as script ::: Run this file as a script (restarts the interpreter).",
+                "Run file as script ::: Run this file as a script (restarts the interpreter)."
             ),
             icons.run_file_script,
             self._fileAction,
@@ -1866,7 +1866,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Run file as script ::: Restart and run the current file as a script.",
+                "Run file as script ::: Restart and run the current file as a script."
             ),  # noqa
             icons.run_file_script,
             self._runFile,
@@ -1875,7 +1875,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Run main file as script ::: Restart and run the main file as a script.",
+                "Run main file as script ::: Restart and run the main file as a script."
             ),  # noqa
             icons.run_mainfile_script,
             self._runFile,
@@ -1887,7 +1887,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Execute selection ::: Execute the current editor's selected lines, selected words on the current line, or current line if there is no selection.",
+                "Execute selection ::: Execute the current editor's selected lines, selected words on the current line, or current line if there is no selection."
             ),  # noqa
             icons.run_lines,
             self._runSelected,
@@ -1895,7 +1895,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Execute cell ::: Execute the current editors's cell in the current shell.",
+                "Execute cell ::: Execute the current editors's cell in the current shell."
             ),  # noqa
             icons.run_cell,
             self._runCell,
@@ -1905,7 +1905,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Execute file ::: Execute the current file in the current shell.",
+                "Execute file ::: Execute the current file in the current shell."
             ),
             icons.run_file,
             self._runFile,
@@ -1914,7 +1914,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Execute main file ::: Execute the main file in the current shell.",
+                "Execute main file ::: Execute the main file in the current shell."
             ),
             icons.run_mainfile,
             self._runFile,
@@ -1931,7 +1931,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Execute cell and advance ::: Execute the current editors's cell and advance to the next cell.",
+                "Execute cell and advance ::: Execute the current editors's cell and advance to the next cell."
             ),
             icons.run_cell,
             self._runCellAdvance,
@@ -1942,7 +1942,7 @@ class RunMenu(Menu):
         self.addCheckItem(
             translate(
                 "menu",
-                "Change directory when executing file ::: like Run File As Script does",
+                "Change directory when executing file ::: like Run File As Script does"
             ),
             None,
             self._cdonfileexec,
@@ -1952,7 +1952,7 @@ class RunMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Help on running code ::: Open the pyzo wizard at the page about running code.",
+                "Help on running code ::: Open the pyzo wizard at the page about running code."
             ),
             icons.information,
             self._showHelp,
@@ -2270,7 +2270,7 @@ class HelpMenu(Menu):
         self.addUrlItem(
             translate(
                 "menu",
-                "Report an issue ::: Did you found a bug in Pyzo, or do you have a feature request?",
+                "Report an issue ::: Did you found a bug in Pyzo, or do you have a feature request?"
             ),
             icons.error_add,
             "http://issues.pyzo.org",
@@ -2278,7 +2278,7 @@ class HelpMenu(Menu):
         self.addItem(
             translate(
                 "menu",
-                "Local documentation ::: Documentation on Python and the Scipy Stack.",
+                "Local documentation ::: Documentation on Python and the Scipy Stack."
             ),
             icons.help,
             self._showPyzoDocs,
@@ -2398,7 +2398,7 @@ class AutocompMenu(Menu):
         self.addCheckItem(
             translate(
                 "menu",
-                "Autocomplete keywords ::: The autocompletion list includes keywords.",
+                "Autocomplete keywords ::: The autocompletion list includes keywords."
             ),
             None,
             self._setCompleteKeywords,
@@ -2475,7 +2475,7 @@ class SettingsMenu(Menu):
         self.addBoolSetting(
             translate(
                 "menu",
-                "Automatically indent ::: Indent when pressing enter after a colon.",
+                "Automatically indent ::: Indent when pressing enter after a colon."
             ),
             "autoIndent",
             lambda state, key: [e.setAutoIndent(state) for e in pyzo.editors],

@@ -453,15 +453,15 @@ class ShellInfoTab(QtWidgets.QScrollArea):
         translate("shell", "ipython ::: Use IPython shell if available."),
         translate(
             "shell",
-            "gui ::: The GUI toolkit to integrate (for interactive plotting, etc.).",
+            "gui ::: The GUI toolkit to integrate (for interactive plotting, etc.)."
         ),
         translate(
             "shell",
-            "pythonPath ::: A list of directories to search for modules and packages. Write each path on a new line, or separate with the default seperator for this OS.",
+            "pythonPath ::: A list of directories to search for modules and packages. Write each path on a new line, or separate with the default seperator for this OS."
         ),  # noqa
         translate(
             "shell",
-            "startupScript ::: The script to run at startup (not in script mode).",
+            "startupScript ::: The script to run at startup (not in script mode)."
         ),
         translate("shell", "startDir ::: The start directory (not in script mode)."),
         translate("shell", "argv ::: The command line arguments (sys.argv)."),

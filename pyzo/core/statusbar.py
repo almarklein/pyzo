@@ -4,7 +4,7 @@ Functionality for status bar in pyzo.
 
 """
 from pyzo.util.qt import QtWidgets
-
+from pyzo import translate
 
 class StatusBar(QtWidgets.QStatusBar):
     """
@@ -36,7 +36,8 @@ class StatusBar(QtWidgets.QStatusBar):
             ncol = editor.textCursor().positionInBlock()
             ncol += 1
 
-        position_txt = "Line: {}, Column: {} ".format(str(nrow), str(ncol))
+        position_template = translate("editor", "Line: {}, Column: {} ")
+        position_txt = position_template.format(str(nrow), str(ncol))
         self.cursor_pos.setText(position_txt)
 
     def updateFileEncodingInfo(self, editor):

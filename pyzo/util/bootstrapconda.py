@@ -122,7 +122,7 @@ class Installer(QtWidgets.QDialog):
 
         text = translate(
             "bootstrapconda",
-            "This will download and install miniconda on your computer.",
+            "This will download and install miniconda on your computer."
         )
 
         self._label = QtWidgets.QLabel(text, self)

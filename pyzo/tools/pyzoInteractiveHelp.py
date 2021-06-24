@@ -19,11 +19,11 @@ tool_summary = pyzo.translate(
 keywordsHelp = {
     "await": pyzo.translate(
         "pyzoInteractiveHelp",
-        "Suspend the execution of coroutine on an awaitable object. Can only be used inside a coroutine function.",
+        "Suspend the execution of coroutine on an awaitable object. Can only be used inside a coroutine function."
     ),
     "else": pyzo.translate(
         "pyzoInteractiveHelp",
-        """This keyword can appear as part of an alternative (see: ``if``), a loop (see: ``for``, ``while``) or a ``try`` statement.""",
+        """This keyword can appear as part of an alternative (see: ``if``), a loop (see: ``for``, ``while``) or a ``try`` statement."""
     ),
     "import": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -38,21 +38,21 @@ from foo.bar import baz    # foo.bar.baz imported and bound as baz
 from foo import attr       # foo imported and foo.attr bound as attr
 from foo import *          # foo imported and all its members bound
                                     # under their respective names
-```""",
+```"""
     ),
     "pass": pyzo.translate(
         "pyzoInteractiveHelp",
-        "This is an instruction that does nothing. It is useful in cases where a statement must appear because of syntactic constraints but we have nothing to do.",
+        "This is an instruction that does nothing. It is useful in cases where a statement must appear because of syntactic constraints but we have nothing to do."
     ),
     "break": pyzo.translate(
         "pyzoInteractiveHelp",
         """This keyword can only appear in the body of a ``for`` or ``while`` loop. It terminates the loop early, regardless of the loop condition.
 
-See also: ``continue``""",
+See also: ``continue``"""
     ),
     "except": pyzo.translate(
         "pyzoInteractiveHelp",
-        "An ``except`` clause can appear as a part of a ``try`` statement.",
+        "An ``except`` clause can appear as a part of a ``try`` statement."
     ),
     "in": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -60,40 +60,40 @@ See also: ``continue``""",
 
 In a construct of the form ``for identifier in iterable``, ``in`` is a purely syntactic element that bears no meaning per se. See: ``for``
 
-Outside such constructs, ``in`` is an operator and its precise meaning depends on the type of the first operand.""",
+Outside such constructs, ``in`` is an operator and its precise meaning depends on the type of the first operand."""
     ),
     "raise": pyzo.translate(
         "pyzoInteractiveHelp",
-        "The ``raise`` statement is used to raise an Exception. Raising an exception will cause the program to abort, unless the exception is handled by a surrounding ``try``/``except`` statement or ``with`` statement.",
+        "The ``raise`` statement is used to raise an Exception. Raising an exception will cause the program to abort, unless the exception is handled by a surrounding ``try``/``except`` statement or ``with`` statement."
     ),
     "class": pyzo.translate(
         "pyzoInteractiveHelp", "This keyword introduces the definition of a class."
     ),
     "finally": pyzo.translate(
         "pyzoInteractiveHelp",
-        "An ``finally`` clause can appear as a part of a ``try`` statement.",
+        "An ``finally`` clause can appear as a part of a ``try`` statement."
     ),
     "is": pyzo.translate(
         "pyzoInteractiveHelp",
         """This operator tests for an object’s identity: ``x is y`` is true if and only if ``x`` and ``y`` are the same object.
 
-See also: ``id``""",
+See also: ``id``"""
     ),
     "return": pyzo.translate(
         "pyzoInteractiveHelp",
-        "This keyword can only appear in the definition of a function. It is usually followed by an expression. It means that the execution of the function call terminates here and that the result of the call is the value of the following expression. If ``return`` is not followed by an expression, the result is ``None``.",
+        "This keyword can only appear in the definition of a function. It is usually followed by an expression. It means that the execution of the function call terminates here and that the result of the call is the value of the following expression. If ``return`` is not followed by an expression, the result is ``None``."
     ),
     "and": pyzo.translate(
         "pyzoInteractiveHelp",
         """This operator computes the boolean conjunction in a lazy manner. More precisely, the expression ``x and y`` first evaluates ``x``; if ``x`` is false, its value is returned; otherwise, ``y`` is evaluated and the resulting value is returned.
 
-See also: ``or``, ``not``, ``True``, ``False``""",
+See also: ``or``, ``not``, ``True``, ``False``"""
     ),
     "continue": pyzo.translate(
         "pyzoInteractiveHelp",
         """This keyword can only appear in the body of a ``for`` or ``while`` loop. It terminates the current run of the body early. The loop may still make additional runs of its body if its condition is still true .
 
-See also: ``break``""",
+See also: ``break``"""
     ),
     "for": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -125,7 +125,7 @@ Example:
 [2*x for x in T]
 ```
 This builds from ``T`` a list where each item was doubled.
-""",
+"""
     ),
     "lambda": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -134,7 +134,7 @@ This builds from ``T`` a list where each item was doubled.
 Example:
 ```
 lambda x,y,z : (x+y) * z
-```""",
+```"""
     ),
     "try": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -159,24 +159,24 @@ finally:
 ```
 If ``critical_section`` raises an exception, the ``suite`` will be executed before aborting the program. The ``suite`` is also executed when no exception is raised. When a ``return``, ``break`` or ``continue`` statement is executed in the ``critical_section``, the ``finally`` clause is also executed ‘on the way out.’ A ``continue`` statement is illegal in the ``finally`` clause.
 
-Both mechanisms can be combined, the ``finally`` clause coming after the last ``except`` clause or after the optional ``else`` clause.""",
+Both mechanisms can be combined, the ``finally`` clause coming after the last ``except`` clause or after the optional ``else`` clause."""
     ),
     "as": pyzo.translate(
         "pyzoInteractiveHelp",
-        "The ``as`` keyword can appear in an ``import`` statement, in an ``except`` clause of a ``try`` statement or in a ``with`` statement.",
+        "The ``as`` keyword can appear in an ``import`` statement, in an ``except`` clause of a ``try`` statement or in a ``with`` statement."
     ),
     "def": pyzo.translate(
         "pyzoInteractiveHelp", "This keyword introduces the definition of a function."
     ),
     "from": pyzo.translate(
         "pyzoInteractiveHelp",
-        "This keyword can appear as a part of an ``import`` or a ``raise``. It has different meanings; see help on those keywords.",
+        "This keyword can appear as a part of an ``import`` or a ``raise``. It has different meanings; see help on those keywords."
     ),
     "nonlocal": pyzo.translate(
         "pyzoInteractiveHelp",
         """This keyword can only appear in the definition of a function. It is followed by identifiers and indicates that those identifier refer variables from the outer scope, not local variables in the function being defined.
 
-See also: ``global``""",
+See also: ``global``"""
     ),
     "while": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -190,27 +190,27 @@ else:           # optional
 ```
 This repeatedly tests the ``expression`` and, if it is true, executes the ``body``; if the ``expression`` is false (which may be the first time it is tested) the ``suite`` of the ``else`` clause, if present, is executed and the loop terminates.
 
-A ``break`` statement executed in the ``body`` terminates the loop without executing the ``else`` clause’s ``suite``. A ``continue`` statement executed in the ``body`` skips the rest of the ``body`` and goes back to testing the ``expression``.""",
+A ``break`` statement executed in the ``body`` terminates the loop without executing the ``else`` clause’s ``suite``. A ``continue`` statement executed in the ``body`` skips the rest of the ``body`` and goes back to testing the ``expression``."""
     ),
     "assert": pyzo.translate(
         "pyzoInteractiveHelp",
-        "Assert statements are a convenient way to insert debugging assertions into a program.",
+        "Assert statements are a convenient way to insert debugging assertions into a program."
     ),
     "del": pyzo.translate(
         "pyzoInteractiveHelp",
-        """Deletion of a name removes the binding of that name from the local or global namespace. It is also possible to delete an item in a list.""",
+        """Deletion of a name removes the binding of that name from the local or global namespace. It is also possible to delete an item in a list."""
     ),
     "global": pyzo.translate(
         "pyzoInteractiveHelp",
         """This keyword is followed by identifiers and indicates that those identifiers refer variables from the module scope, not local variables.
 
-See also: ``nonlocal``""",
+See also: ``nonlocal``"""
     ),
     "not": pyzo.translate(
         "pyzoInteractiveHelp",
         """The operator ``not`` returns ``True`` if its argument is false, ``False`` otherwise.
 
-See also: ``and``, ``or``, ``True``, ``False``""",
+See also: ``and``, ``or``, ``True``, ``False``"""
     ),
     "with": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -222,15 +222,15 @@ with open(filename) as infile:
     header = infile.readline()
     # etc.
 ```
-In this example, the context manager will ensure correct closing of the file upon exiting the ``with`` statement, even if an exception was raised.""",
+In this example, the context manager will ensure correct closing of the file upon exiting the ``with`` statement, even if an exception was raised."""
     ),
     "async": pyzo.translate(
         "pyzoInteractiveHelp",
-        "This keyword appears as part of the ``async def``, ``async for`` and ``async with`` constructs and allows for writing coroutines.",
+        "This keyword appears as part of the ``async def``, ``async for`` and ``async with`` constructs and allows for writing coroutines."
     ),
     "elif": pyzo.translate(
         "pyzoInteractiveHelp",
-        "This keyword can only appear as part of an alternative. See: ``if``",
+        "This keyword can only appear as part of an alternative. See: ``if``"
     ),
     "if": pyzo.translate(
         "pyzoInteractiveHelp",
@@ -254,17 +254,17 @@ Example:
 ```
 [x for x in T if x%2==0]
 ```
-This filters ``T`` to keep only its even items.""",
+This filters ``T`` to keep only its even items."""
     ),
     "or": pyzo.translate(
         "pyzoInteractiveHelp",
         """This operator computes the boolean disjunction in a lazy manner. More precisely, the expression ``x or y`` first evaluates ``x``; if ``x`` is true, its value is returned; otherwise, ``y`` is evaluated and the resulting value is returned.
 
-See also: ``and``, ``not``, ``True``, ``False``""",
+See also: ``and``, ``not``, ``True``, ``False``"""
     ),
     "yield": pyzo.translate(
         "pyzoInteractiveHelp",
-        """The ``yield`` expression is used when defining a generator function or an asynchronous generator function and thus can only be used in the body of a function definition. Using a yield expression in a function’s body causes that function to be a generator, and using it in an ``async def`` function’s body causes that coroutine function to be an asynchronous generator.""",
+        """The ``yield`` expression is used when defining a generator function or an asynchronous generator function and thus can only be used in the body of a function definition. Using a yield expression in a function’s body causes that function to be a generator, and using it in an ``async def`` function’s body causes that coroutine function to be an asynchronous generator."""
     ),
 }
 
@@ -292,7 +292,7 @@ operators = [
 ]
 operatorsHelp = pyzo.translate(
     "pyzoInteractiveHelp",
-    "No help is available for operators because they are ambiguous: their meaning depend on the type of the first operand.",
+    "No help is available for operators because they are ambiguous: their meaning depend on the type of the first operand."
 )
 
 
@@ -339,7 +339,7 @@ initText = pyzo.translate(
 Help information is queried from the current shell
 when moving up/down in the autocompletion list
 and when double clicking on a name.
-""",
+"""
 )
 
 

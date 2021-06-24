@@ -363,7 +363,7 @@ class PyzoWorkspace(QtWidgets.QWidget):
                 "pyzoWorkspace",
                 """Lists the variables in the current shell's namespace.
 
-Currently, there are none. Some of them may be hidden because of the filters you configured.""",
+Currently, there are none. Some of them may be hidden because of the filters you configured."""
             ),
             self,
         )

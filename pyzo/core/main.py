@@ -173,7 +173,7 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             dock.setFeatures(dock.DockWidgetMovable)
         dock.setObjectName("shells")
-        dock.setWindowTitle("Shells")
+        dock.setWindowTitle(translate("shells", "Shells"))
         self.addDockWidget(QtCore.Qt.RightDockWidgetArea, dock)
 
         # Create shell stack

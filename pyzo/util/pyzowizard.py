@@ -36,7 +36,7 @@ class PyzoWizard(QtWidgets.QWizard):
         self.setMinimumSize(600, 500)
         self.setWindowTitle(translate("wizard", "Getting started with Pyzo"))
         self.setWizardStyle(self.ModernStyle)
-        self.setButtonText(self.CancelButton, "Stop")
+        self.setButtonText(self.CancelButton, translate("wizard", "Stop"))
 
         # Set logo
         pm = QtGui.QPixmap()
@@ -169,14 +169,14 @@ class IntroWizardPage(BasePyzoWizardPage):
     _descriptions = [
         translate(
             "wizard",
-            """This wizard helps you get familiarized with the workings of Pyzo.""",
+            """This wizard helps you get familiarized with the workings of Pyzo."""
         ),
         translate(
             "wizard",
             """Pyzo is a cross-platform Python IDE
         focused on *interactivity* and *introspection*, which makes it
         very suitable for scientific computing. Its practical design
-        is aimed at *simplicity* and *efficiency*.""",
+        is aimed at *simplicity* and *efficiency*."""
         ),
     ]
 
@@ -243,7 +243,7 @@ class IntroWizardPage(BasePyzoWizardPage):
             """
         The language has been changed for this wizard.
         Pyzo needs to restart for the change to take effect application-wide.
-        """,
+        """
         )
         m = QtWidgets.QMessageBox(self)
         m.setWindowTitle(translate("wizard", "Language changed"))
@@ -280,13 +280,13 @@ class EditorWizardPage(BasePyzoWizardPage):
         translate(
             "wizard",
             """In the *editor*, each open file is represented as a tab. By
-        right-clicking on a tab, files can be run, saved, closed, etc.""",
+        right-clicking on a tab, files can be run, saved, closed, etc."""
         ),
         translate(
             "wizard",
             """The right mouse button also enables one to make a file the
         *main file* of a project. This file can be recognized by its star
-        symbol, and it enables running the file more easily.""",
+        symbol, and it enables running the file more easily."""
         ),
     ]
 
@@ -300,13 +300,13 @@ class ShellWizardPage1(BasePyzoWizardPage):
             "wizard",
             """When Pyzo starts, a default *shell* is created. You can add more
         shells that run simultaneously, and which may be of different
-        Python versions.""",
+        Python versions."""
         ),
         translate(
             "wizard",
             """Shells run in a sub-process, such that when it is busy, Pyzo
         itself stays responsive, allowing you to keep coding and even
-        run code in another shell.""",
+        run code in another shell."""
         ),
     ]
 
@@ -319,13 +319,13 @@ class ShellWizardPage2(BasePyzoWizardPage):
         translate(
             "wizard",
             """Pyzo can integrate the event loop of five different *GUI toolkits*,
-        thus enabling interactive plotting with e.g. Visvis or Matplotlib.""",
+        thus enabling interactive plotting with e.g. Visvis or Matplotlib."""
         ),
         translate(
             "wizard",
             """Via 'Shell > Edit shell configurations', you can edit and add
         *shell configurations*. This allows you to for example select the
-        initial directory, or use a custom Pythonpath.""",
+        initial directory, or use a custom Pythonpath."""
         ),
     ]
 
@@ -337,23 +337,23 @@ class RuncodeWizardPage1(BasePyzoWizardPage):
     _descriptions = [
         translate(
             "wizard",
-            "Pyzo supports several ways to run source code in the editor. (see the 'Run' menu).",
+            "Pyzo supports several ways to run source code in the editor. (see the 'Run' menu)."
         ),
         translate(
             "wizard",
             """*Run selection:* if there is no selected text, the current line
         is executed; if the selection is on a single line, the selection
         is evaluated; if the selection spans multiple lines, Pyzo will
-        run the the (complete) selected lines.""",
+        run the the (complete) selected lines."""
         ),
         translate(
             "wizard",
-            "*Run cell:* a cell is everything between two lines starting with '##'.",
+            "*Run cell:* a cell is everything between two lines starting with '##'."
         ),
         translate("wizard", "*Run file:* run all the code in the current file."),
         translate(
             "wizard",
-            "*Run project main file:* run the code in the current project's main file.",
+            "*Run project main file:* run the code in the current project's main file."
         ),
     ]
 
@@ -368,17 +368,17 @@ class RuncodeWizardPage2(BasePyzoWizardPage):
             """You can run the current file or the main file normally, or as a script.
         When run as script, the shell is restarted to provide a clean
         environment. The shell is also initialized differently so that it
-        closely resembles a normal script execution.""",
+        closely resembles a normal script execution."""
         ),
         translate(
             "wizard",
             """In interactive mode, sys.path[0] is an empty string (i.e. the current dir),
-        and sys.argv is set to [''].""",
+        and sys.argv is set to ['']."""
         ),
         translate(
             "wizard",
             """In script mode, __file__ and sys.argv[0] are set to the scripts filename,
-        sys.path[0] and the working dir are set to the directory containing the script.""",
+        sys.path[0] and the working dir are set to the directory containing the script."""
         ),
     ]
 
@@ -391,13 +391,13 @@ class ToolsWizardPage1(BasePyzoWizardPage):
         translate(
             "wizard",
             """Via the *Tools menu*, one can select which tools to use. The tools can
-        be positioned in any way you want, and can also be un-docked.""",
+        be positioned in any way you want, and can also be un-docked."""
         ),
         translate(
             "wizard",
             """Note that the tools system is designed such that it's easy to
         create your own tools. Look at the online wiki for more information,
-        or use one of the existing tools as an example.""",
+        or use one of the existing tools as an example."""
         ),
     ]
 
@@ -410,12 +410,12 @@ class ToolsWizardPage2(BasePyzoWizardPage):
         translate("wizard", """We especially recommend the following tools:"""),
         translate(
             "wizard",
-            """The *Source structure tool* gives an outline of the source code.""",
+            """The *Source structure tool* gives an outline of the source code."""
         ),
         translate(
             "wizard",
             """The *File browser tool* helps keep an overview of all files
-        in a directory. To manage your projects, click the star icon.""",
+        in a directory. To manage your projects, click the star icon."""
         ),
     ]
 
@@ -427,7 +427,7 @@ class FinalPage(BasePyzoWizardPage):
     _descriptions = [
         translate(
             "wizard",
-            """This concludes the Pyzo wizard. Now, get coding and have fun!""",
+            """This concludes the Pyzo wizard. Now, get coding and have fun!"""
         ),
     ]
 

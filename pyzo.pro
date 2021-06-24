@@ -10,6 +10,7 @@ SOURCES += pyzo/core/menu.py
 SOURCES += pyzo/core/shellInfoDialog.py
 SOURCES += pyzo/core/shellStack.py
 SOURCES += pyzo/core/splash.py
+SOURCES += pyzo/core/statusbar.py
 
 SOURCES += pyzo/tools/pyzoFileBrowser/browser.py
 SOURCES += pyzo/tools/pyzoFileBrowser/importwizard.py
@@ -20,6 +21,7 @@ SOURCES += pyzo/tools/pyzoSourceStructure.py
 SOURCES += pyzo/tools/pyzoWorkspace.py
 SOURCES += pyzo/tools/pyzoWebBrowser.py
 SOURCES += pyzo/tools/pyzoInteractiveHelp.py
+SOURCES += pyzo/tools/pyzoLogger.py
 
 # Languages to translate to
 TRANSLATIONS  = pyzo/resources/translations/pyzo_nl_NL.tr
